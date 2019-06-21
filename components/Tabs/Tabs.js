@@ -35,7 +35,7 @@ class TabLink {
 
     // Select all elements with the .tab class on them
     // const tabs = document.querySelectorAll();
-    const tabs = document.querySelectorAll('.tab');
+    const tabs = document.querySelectorAll('.tabs .tab');
     //debugger;
     // Iterate through the NodeList removing the .active-tab class from each element
     // tabs.forEach()
@@ -82,4 +82,4 @@ class TabCard {
 - In your .forEach() method's callback function, return a new instance of TabLink and pass in each tab as a parameter
 
 */
-let tabs = document.querySelectorAll('.tab').forEach(tab => new TabLink(tab));
+let tabs = document.querySelectorAll('.tabs .tab').forEach(tab => new TabLink(tab));
